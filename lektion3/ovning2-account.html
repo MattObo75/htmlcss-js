@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free account</title>
+</head>
+<body>
+    <h1>Create a free account</h1>
+    <fieldset style="width:500px;">  
+        <legend><strong>Account Details</strong></legend>
+        <form action="action_page.php" method="post">
+            <label for="email">Email*</label><br>
+            <input type="email" name="email" id="email" size="30" maxlength="35" required>
+            <br>
+            <label for="password">Password*</label><br>
+            <input type="password" name="password" id="password" size="30" maxlength="20" required>
+            <br>
+            <label for="email">Repeat email*</label><br>
+            <input type="email" name="email" id="email" size="30" maxlength="35" required>
+            <br>
+            <label for="password">Repeat password*</label><br>
+            <input type="password" name="password" id="password" size="30" maxlength="20" required>
+            <br>
+    </fieldset>
+        <br>
+    <fieldset style="width:500px;">  
+        <legend><strong>Personal Details</strong></legend>
+        <label for="name">Name*</label><br>
+        <input type="text" name="name" id="name" size="30" maxlength="35" required>
+        <br>
+        <label for="mobile">Phone*</label><br>
+        <input type="mobile" name="mobile" id="mobile" size="30" maxlength="35" required>
+        <br>
+        <label for="street">Street</label><br>
+        <input type="text" name="street" id="street" size="30" maxlength="35">
+        <br>
+        <label for="city">City*</label><br>
+        <input type="text" name="city" id="city" size="30" maxlength="35" required>
+        <br>
+        <label for="country">Country*</label><br>
+            <select name="country" id="country" required>
+                <option value="none" selected>Select</option>
+                <option value="AG">Antigua and Barbuda</option>
+                <option value="AR">Argentina</option>
+                <option value="AM">Armenia</option>
+                <option value="AW">Aruba</option>
+                <option value="AU">Australia</option>
+                <option value="AT">Austria</option>
+                <option value="MM">Myanmar (Burma)</option>
+                <option value="NA">Namibia</option>
+                <option value="VC">Saint Vincent and the Grenadines</option>
+                <option value="SE">Sweden</option>
+                <option value="CH">Switzerland</option>
+            </select>
+        <br>
+        <label for="website">Website</label><br>
+        <input type="url" name="website" id="website" size="30" maxlength="35">
+        <br>
+        <label for="gender">Gender*</label><br>
+        <input type="radio" name="gender" id="genre_male" value="Male">
+        <label for="genre_male">Male</label> 
+        <input type="radio" name="gender" id="genre_female" value="Female">
+        <label for="genre_male">Female</label>
+        <br><br>
+        <label for="birthdate">Birthdate*</label><br>
+        <input type="date" name="birthdate" id="birthdate" size="30" maxlength="11" required>
+        <br>
+        <label for="nationality">Nationality*</label><br>
+        <select name="nationality" id="nationality" required>
+                <option value="none" selected>Select</option>
+                <option value="MT">Mother tongue</option>
+                <option value="OL">Other languague</option>
+        </select>
+        <br>
+        <label for="children">Children</label><br>
+        <input type="checkbox" name="children" id="children" value="none">        
+    </fieldset>    
+    <br>
+    <fieldset style="width:500px;">  
+        <legend><strong>Terms and Mailing</strong></legend><br>
+        <input type="checkbox" name="privacy" id="privacy" value="none" required>
+        <label for="privacy"> I accept the <a href="https://Privacy Policy" target="_blank">Privacy Policy</a> *</label><br>
+        <input type="checkbox" name="offer" id="offer" value="none">
+        <label for="offer"> I want to recieve personalized offers by your site</label>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+    <br><br>
+</body>
+</html>

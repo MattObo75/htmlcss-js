@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+</head>
+<body>
+    <!--Inloggningsformulär-->
+    <h1>Login form</h1>
+    
+    <form action="action_page.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" size="15" maxlength="15">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" size="15" maxlength="20">
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Textarea -->
+    <h1>Second form</h1>
+    <p>Would you like to give us a comment?</p>
+    <textarea name="comments" id="comments" cols="20" rows="4"></textarea>
+
+    <!-- Radioknappar -->
+    <p>Please select your favourite genre: <br>
+        <input type="radio" name="genre" id="genre_none" value="none" checked>
+        <label for="genre_none">None</label> <br>
+
+        <input type="radio" name="genre" id="genre_rock" value="rock">
+        <label for="genre_rock">Rock</label> <br>
+
+        <input type="radio" name="genre" id="genre_pop" value="pop">
+         <label for="genre_pop">Pop</label> <br>
+
+        <input type="radio" name="genre" id="genre_jazz" value="jazz">
+        <label for="genre_jazz">Jazz</label> <br>
+    </p>
+
+    <!-- Fieldset formulär -->
+    <fieldset>
+        <legend>Contact details:</legend>        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" size="30" maxlength="50">
+        <br><br>
+        <label for="mobile">Mobile</label>
+        <input type="text" name="mobile" id="mobile" size="15" maxlength="15">
+        <br>
+    </fieldset>
+
+    <!-- Checkboxes -->
+    <p>Please select your favourite music service(s):<br>
+        <input type="checkbox" name="service" id="service_none" value="none" checked>
+        <label for="service_none">None</label><br>
+
+        <input type="checkbox" name="service" id="service_itunes" value="itunes">
+        <label for="service_itunes">iTunes</label><br>
+
+        <input type="checkbox" name="service" id="service_syntaxfm" value="syntaxfm"> 
+        <label for="service_syntaxfm">Syntax FM</label><br>   
+
+        <input type="checkbox" name="service" id="service_spotify" value="spotify"> 
+        <label for="service_spotify">Spotify</label><br>
+    </p> 
+
+    <!-- Drop down listor -->
+    <p>What device do you use to listen to music?<br>
+        <select name="device" id="device" required>
+            <option value="none" selected>None</option>
+            <option value="computer">Computer</option>
+            <option value="tablet">Tablet</option>
+            <option value="mobile">Mobile</option>
+            <option value="other">Other</option>
+        </select>
+    </p>
+    <hr>
+
+    <!-- Datum och tid -->
+    <label for="departure">Departure date:</label>
+    <input type="date" id="departure" name="departure">
+    <br><br>
+    <label for="time">Departure time:</label>
+    <input type="time" id="time" name="time">
+    <br><br>
+    <label for="dateandtime">Departure date and time:</label>
+    <input type="datetime" id="dateandtime" name="dateandtime">
+    <br><br>
+
+    <!-- Ladda upp en fil -->
+    <p>Upload your song in mp3 format:</p>
+        <input type="file" name="user_song" id="user_song" accept=".mp3">
+        <input type="submit" value="Submit">    
+    <br><br>
+    <hr>
+
+    <!-- Sökfält och placeholder -->
+
+    <input type="search" name="search" id="search" placeholder="Search this site...">
+    <input type="submit" value="Search">
+    <input type="reset" value="Reset">
+    <br><br>
+    <hr>
+    <!-- Attribute disabled -->
+    <form action="">
+        First name: <input type="text" name="firsname">
+        <input type=submit value="Add" disabled>
+    </form>
+    <br><br>
+    <hr>
+
+    <!-- Datalista -->  
+    <h2>Datalista</h2>
+    <input list=browsers name=browser>
+    <datalist id=browsers>
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Opera">
+        <option value="Edge">
+    </datalist>
+    <br><br>
+    <hr>
+
+    <!-- Vecka -->  
+    <label for="week">Select a week: </label>
+    <input type="week" id="week" name="week">
+    <br><br>
+    <hr>
+
+    <!-- Färg -->  
+    <label for="color">Select your favourite color: </label>
+    <input type="color" id="color" name="color" value="#FFFFFF">
+    <br><br>
+    <hr>
+
+    <!-- URL -->  
+    <label for="url">Select your favourite website: </label>
+    <input type="url" id="url" name="url">
+    <br><br>
+    <hr>
+
+    <!-- Hidden fält -->  
+    <label for="hidden">Select your favourite website: </label>
+    <input type="hidden" name="customer_id" value="3487">
+    <br><br>
+    <hr>
+
+    <!-- Attribute required -->
+    <h2>Formulärvalidering</h2>
+    <form action="">
+        Quantity (between 1 and 5): 
+        <input type="number" name="quantity" id="quantity" required>
+        <input type=submit value="Send">
+    </form>
+    <br>
+
+    <!-- Validering med min/max -->
+    <form action="">
+        Quantity (between 1 and 5): 
+        <input type="number" name="quantity" id="quantity" min="1" max="5" required>
+        <input type=submit value="Send">
+    </form>
+    <br>
+    <hr>
+
+    <!-- Epost validering -->
+    <h2>Subscription form</h2>
+    <form action="">
+        Email: 
+        <input type="email" name="email" id="email" required>
+        <input type=submit value="Subscribe">
+    </form>
+    <hr>
+    <br>
+
+    <!-- iframe Boulognerskogen -->
+    <h2>iframe Karta</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5527.408749164795!2d17.120100168181718!3d60.672215590397784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1762337693255!5m2!1ssv!2sse" 
+    width="500" 
+    height="350" 
+    style="border:2;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+
+    </iframe>
+</body>
+
+</html>

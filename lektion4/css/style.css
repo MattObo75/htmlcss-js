@@ -1,0 +1,37 @@
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 0.75em;
+}
+.ingress {
+    font-family: Arial;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.hamburger-menu {
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 2.5rem;
+    height: 2.5rem;  
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.hamburger-menu .bar {
+    height: 7px;
+    background-color: orange;
+    border-radius: 5px;    
+    margin: 3px 0px; /* First: top-bottom Second: right-left */
+    transform-origin: left; /* Set transform origin for rotation */
+    transition: all 0.5s; /* Smooth transition for hover effects */
+}
+
+.hamburger-menu:hover .top {
+    transform: rotate(45deg); /* Rotate top bar on hover */
+}
+
+.hamburger-menu:hover .middle {
+    opacity: 0; /* Hide middle bar on hover */
+}
+.hamburger-menu:hover .bottom {
+    transform: rotate(-45deg); /* Rotate bottom bar on hover */
+}
