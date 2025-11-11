@@ -1,35 +1,23 @@
-#header {
-    min-width: 700px;
-    max-width: 950px;
-    margin: 10 auto 10 auto;
-    padding: 10px;
-    /* border: 1px double #000; */
-    background-color: #aeaca9;
-}
-#footer {
-    min-width: 700px;
-    max-width: 950px;
-    margin: 10 auto 10 auto;
-    padding: 10px;
-    /* border: 1px double #000; */
-    background-color: #aeaca9;
-}
-
 body {
-    font-size: 95%;
+    color: #665544;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #efefef;
+    background-color: #dad5cc;
+    text-align: center;
+}
+.wrapper {
+	width: 800px;
+	margin: 0px auto;
+}
+.header {
+    width: 800px;
+    margin: 0px auto;
+    padding: 10px;
+    /* border: 1px double #000; */
+    background-color: #aeaca8;
 }
 
-#page {
-    min-width: 700px;
-    max-width: 950px;
-    margin: 10 auto 10 auto;
-    padding: 10px;
-    /* border: 1px double #000;*/
-    background-color: #d8d5cb;
-}
-#logo {
+
+.logo {
     width: 150px;
     margin: 10px auto 20px auto;
 }
@@ -52,26 +40,36 @@ a {
     color: #fff;
     padding: 6px 18px 6px 18px;
 }
-#placeholderBig {
-    /* text-align: center; */
+.placeholderBig {
     width: 728px;
     height: 90px;
     border-style: dotted;
     margin: 20px auto 20px auto;
 }
-#placeholderSmall {
-    /* text-align: center; */
-    width: 225px;
-    height: 220px;
-    box-shadow: 5px 5px 5px 5px #ccc;
-    border-style: outset;
-    margin: 25px 20px 20px 20px;
-    padding: 10px;  
-}
-ul.image-align-left {
-    display: list-item;
+.entry {    
+    width: 240px;
+    float: left;
     margin: 10px;
-    list-style-image: url("img/wheel.png");    
+    height: 240px;
+    background-image: url("img/shadow.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /*box-shadow: 5px 5px 5px 5px #ccc;*/
+    /*border-style: outset;*/    
+}
+figure {
+	display: block;
+	width: 225px;
+	height: 220px;
+	background-color: #e7e3d8;
+	margin: 5px;
+	padding: 9px;
+	text-align: left;
+}
+figure img {
+	width: 220px;
+	height: 198px;
+	border: 1px solid #d6d6d6;
 }
 p {
     text-align: center;
@@ -82,4 +80,13 @@ p {
 a:hover, a.on {
     color: 000;
     background-color: #989794;
+}
+.footer {
+    clear: both;
+    width: 800px;   
+    height: 30px; 
+	margin: 0px auto;
+    padding: 10px;
+    /* border: 1px double #000; */
+    background-color: #aeaca8;
 }
