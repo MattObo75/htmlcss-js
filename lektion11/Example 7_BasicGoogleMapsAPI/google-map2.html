@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 9: APIs - Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;}
+      #map {
+        width: 400px;
+        height: 400px;
+        margin: 50px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/c09.css" />
+  </head>
+  <body>
+    <header><h1>THE MAKER BUS</h1></header>
+    <p><strong>Naumberg Bandshell</strong><br>Central Park<br>New York, NY 10019</p>
+    <gmp-map
+      center="37.4220656,-122.0840897"
+      zoom="5"
+      map-id="DEMO_MAP_ID"
+      style="width: 200px"        
+    ></gmp-map>
+    
+    
+    <script src="js/google-map2.js"></script>
+  </body>
+</html>
