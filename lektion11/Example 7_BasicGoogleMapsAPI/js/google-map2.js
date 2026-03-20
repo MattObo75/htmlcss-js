@@ -5,3 +5,10 @@ async function loadScript() {
 }
 
 window.onload = loadScript; //onload anropar loadScript()
+
+AIzaSyDgVm8GOdbi-71I92NRK319Kd6Vr1hwiQk
+
+MEKMAPID750330
+2bbfa0ae181b844db2d00361
+
+60.6639357, 17.2111360
